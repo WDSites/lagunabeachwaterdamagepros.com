@@ -256,10 +256,18 @@ body{padding-bottom:62px}
 }
 
 /* page-type and structural hooks */
-.t-home,.t-service,.t-location,.t-blog,.t-standard,.t-notfound{background:#fff}
+.t-home,.t-service,.t-location,.t-neighborhood,.t-blog,.t-standard,.t-notfound{background:#fff}
 .stdpage{max-width:100%}
 .blk{margin:0}
 .foot-brand{max-width:100%;min-width:0}
 .site-footer p,.site-footer a{overflow-wrap:anywhere}
 main p,main li,main td,main a{overflow-wrap:anywhere}
 .routecard,.routecard .rstop,.routecard .rstop b{color:var(--ink)}.routecard .rstop{color:var(--gray)}.routecard .rstop b{color:var(--ink)}
+
+.findgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:18px}.findcol{background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:20px}.findcol h3{font-size:16px;margin-bottom:10px}.findcol ul{list-style:none;padding:0;margin:0}.findcol li{padding:6px 0;border-top:1px solid var(--line);font-size:15px}.findcol li:first-child{border-top:0}
+@media(max-width:900px){.findgrid{grid-template-columns:minmax(0,1fr)}}
+
+/* neighborhood link list (home) */
+.nbhd-list{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.nbhd-list a{display:block;padding:12px 14px;border:1px solid var(--line,#d9d3c3);border-radius:8px;background:#fff;font-weight:600;text-decoration:none;color:inherit;overflow-wrap:anywhere}
+.nbhd-list a:hover,.nbhd-list a:focus-visible{border-color:#B85B2E;color:#B85B2E}
